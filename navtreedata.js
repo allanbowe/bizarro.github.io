@@ -30,7 +30,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_generate_data_driver_8sas.html"
+"_at_bats_8sas_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

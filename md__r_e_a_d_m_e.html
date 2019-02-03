@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>BizarroBall: Bizarro Ball</title>
+<title>BizarroBall: Bizarro Ball &lt;img align=&quot;right&quot; src=&quot;logo_wide.png&quot;&gt;</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -114,12 +114,20 @@ $(document).ready(function(){initNavTree('md__r_e_a_d_m_e.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Bizarro Ball </div>  </div>
+<div class="title">Bizarro Ball </p><div class="image">
+<img src="logo_wide.png" align="right"/>
+</div>
+ </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>What Is It?</h2>
+<div class="textblock"><h2>TLDR;</h2>
+<p>To get the Bizarro Ball data, simply run the following:</p>
+<div class="fragment"><div class="line">filename bizarro url </div><div class="line">  &quot;https://raw.githubusercontent.com/allanbowe/BizarroBall/master/bizarroball.sas&quot;;</div><div class="line">%inc bizarro;</div></div><!-- fragment --><p> Note - this can take 4-5 minutes to run, as there is a lot of data! It will be saved in your SASUSER library/folder, change this location manually if desired.</p>
+<p>After the data is loaded you can remap the libraries in future sessions as follows:</p>
+<div class="fragment"><div class="line">filename bizarro url</div><div class="line">  &quot;https://raw.githubusercontent.com/allanbowe/BizarroBall/master/autoexec.sas&quot;;</div><div class="line">%inc bizarro;</div></div><!-- fragment --><h2>Wait - What Is This?</h2>
 <p>This repository contains the sample data used in the seminal book <a href="https://www.amazon.com/Management-Solutions-Using-Table-Operations/dp/1629601438">Data Management Solutions Using SAS Hash Table Operations: A Business Intelligence Case Study</a> by <a href="https://www.linkedin.com/in/pauldorfman/">Paul Dorfman</a> and <a href="https://www.linkedin.com/in/donaldjhenderson/">Don Henderson</a>. More information on the incredible power of hashing can be found in their SGF2017 paper <a href="https://support.sas.com/resources/papers/proceedings17/0821-2017.pdf">Beyond Table Lookup: The Versatile SAS® Hash Object</a>.</p>
-<p>The code itself is documented <a href="https://allanbowe.github.io/bizarro.github.io/">here</a></p>
+<p>The code itself is documented <a href="https://allanbowe.github.io/bizarro.github.io/">here</a> and was originally sourced from <a href="https://support.sas.com/downloads/package.htm?pid=2247#">here</a> and <a href="http://www.sascommunity.org/wiki/Beyond_Table_Look-up:_The_Versatile_SAS_Hash_Object">here</a>.</p>
+<p>An article on this data is also available on <a href="https://communities.sas.com/t5/SAS-Communities-Library/Bizarro-Ball-Make-a-Hash-of-it/ta-p/524757">communities</a>.</p>
 <h2>Who Is It For?</h2>
 <p>Primarily this data is useful (and was prepared specifically) for readers of the aforementioned <a href="https://www.amazon.com/Management-Solutions-Using-Table-Operations/dp/1629601438">book</a>, however the authors have given permission for the data to be used for other purposes as well - such as testing, education, development, and demos.</p>
 <p>Unlike the sample data in SASHELP, the Bizarro data can <em>modified</em>. It also contains some interesting properties (such as md5 hashed indexes / surrogate keys).</p>
